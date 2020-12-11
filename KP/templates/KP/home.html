@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="'viewport" content="width-device-width,initial scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!--STYLESHEET FOR HEADER & BODY-->
+    <!--<title> Responsive Footer </title>--->
+    <link rel="stylesheet" href="{% static 'ankitahomecss.css' %}">
+    <link rel="stylesheet" href="{% static 'homecss.css' %}">
+
+    <title>Starting Home Page</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body class="body">
+
+    <!--CODE FOR POP-UP -->
+    <div id="popupmain">
+        <div id="popup">
+            <h1 id="poph1">Instructions to Use the KISAN PARVARISH website</h1>
+            <iframe id="video" src="https://www.istockphoto.com/video/im-proud-of-my-business-gm1169082076-323028368?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_video_sponsored&referrer_url=https%253A%2F%2Fpixabay.com%2Fvideos%2Fsearch%2Fagriculture%2F&utm_term=agriculture"></iframe>
+            <br>
+            <button id ="popbutton">Continue to Main Website</button>
+        </div>
+    </div>
+
+    {% block content %}
+
+    <!-- CODE FOR HEADER -->
+    <div class="head">
+        <!-- CODE FOR LANGUAGE BOX -->
+        <select name="Language" id="Language">
+            <optgroup>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </optgroup>
+        </select>
+        <!--CODE FOR LOGO-->
+        <img src = "{% static 'new.jpeg' %}" width="350" height="195" alt="Logo" id="logo"><br>
+        <!--CODE FOR TOP LINKS -->
+        <div class="toplink">
+            <button class="block" id="button1" type="button">HOME</button>
+            <button class="block" id="button2" type="button">TECHNOLOGIES</button>
+            <button class="block" id="button3" type="button">FACILITIES</button>
+            <button class="block" id="button4" type="button">FARMER'S PORTAL</button>
+            <button class="block" id="button5" type="button">SELLER'S PORTAL</button>
+            <button class="block" id="button6" type="button">REACH US</button><br>
+        </div>
+    </div>
+
+    <!-- CODE FOR SCROLLING TEXT BAR -->
+    <div class="scroll-slow">
+        <em>
+            <p>Live message are shown on this bar to give you an update of the current events or important announcement.<a href="blank.html"> show more...</a></p>
+        </em>
+        <br><br>
+    </div>
+
+    <!-- CODE FOR LEFT SIDE BAR -->
+    <div class="leftlink">
+        <h1 id="h"><b>IMPORTANT LINKS</b></h1>
+        <hr>
+        <h1>
+            <a href="blank.html">FARMER'S LIST</a><hr class="hr">
+            <a href="blank.html">SELLER'S LIST</a><hr class="hr">
+            <a href="blank.html">EXISTING CROPS</a><hr class="hr">
+            <a href="blank.html">REQUIREMENT LIST</a>
+        </h1>
+    </div>
+
+    <!-- CODE FOR STATE & DISTRICT FIELDS -->
+    <div class="center">
+        <p>
+            <font size="68">
+                STATE      : <input type="text" placeholder="ENTER YOUR STATE" style="font-size:30px;">
+            </font><br><br>
+            <font size="68">
+                DISTRICT   : <input type="text" placeholder="ENTER YOUR DISTRICT" style="font-size:30px;" >
+            </font>
+        </p><BR>
+        <button type="button">SUBMIT</button>
+    </div>
+
+    /* CODE FOR RIGHT SIDE BAR */
+    <div class="login">
+            <b>
+                <h1 id="h1">LOGIN / REGISTER</h1>
+                <hr>
+                <h3 id="h3">
+                    USERNAME : <input type="text" placeholder="USERNAME" class="text">
+                    <br><br>
+                    PASSWORD : <input type="text" placeholder="PASSWORD" class="text">
+                </h3>
+            </b>
+        <pre>
+            <img src="{% static 'forgot password.png' %}" width="30px" height="30px">  <a href="blank.html">FORGOT PASSWORD?</a>   <img src="{% static 'new user.png' %}" width="30px" height="30px">  <a href="blank.html">NEW USER?</a>     <button>SUBMIT</button></pre>
+            <br><br><br>
+    </div>
+
+    <footer>
+    <div class="content">
+        <div class="left box">
+        <div class="upper">
+         <div class="topic">About us</div>
+         <p>Kisan Parvarish is a all in one solution for all your selling any buying agro needs Bla Bla Bla .</p>
+        </div>
+        <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>+9897654536</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>kisanparvarish@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="#">Farmer's Portal</a></div>
+       <div><a href="#">Seller's Portal</a></div>
+       <div><a href="#">Hastle Free Payments</a></div>
+       <div><a href="#">Etc</a></div>
+       <div><a href="#">Etc</a></div>
+       <div><a href="#">Many more...</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#">
+         <input type="text" placeholder="Enter email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-youtube"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+    <div class="bottom">
+     <p>Copyright © 2020 <a href="#">Kanishk Saini</a> All rights reserved</p>
+    </div>
+    </footer>
+
+
+
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+</html>
