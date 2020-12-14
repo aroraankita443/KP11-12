@@ -9,9 +9,9 @@
 }
 footer{
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
   background: #111;
 }
 footer .content{
